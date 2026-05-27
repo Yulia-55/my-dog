@@ -8,6 +8,16 @@ body {
     font-size: 13px;
     background-color: #f0f0f0;
 }
+h1 {
+    font-family: "Great Vibes", cursive;
+    font-size: 40px;
+    color: white;
+}
+.logo {
+    font-family: "Great Vibes", cursive;
+    font-size: 25px;
+    color: rgb(173, 164, 121);
+}
 .wrapper {
   min-height: 100%;
 }
