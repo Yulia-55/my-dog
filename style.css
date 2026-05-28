@@ -33,3 +33,21 @@ h1 {
   padding: 30px 40px;
   box-sizing: border-box;
 }
+.container {
+    padding: 150px 20px 0;
+    display: flex;    
+    max-width: 1200px;
+    align-items: center;    
+    flex-direction: column;
+    background-color: rgb(233, 232, 222);
+}
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+    max-width: 1200px;
+    width: 100%;
+}
