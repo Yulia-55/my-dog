@@ -51,3 +51,27 @@ h1 {
     max-width: 1200px;
     width: 100%;
 }
+footer {
+    display: flex;
+    background-color: #444444;    
+    text-align: center;
+    padding: 30px 50px;    
+    justify-content: space-between;
+}
+.contakt {
+    display: flex;
+    align-items: center;
+    color: rgb(173, 164, 121);
+}
+.contact-info {
+    padding-left: 10px;
+    font-size: 16px;
+}
+.content {
+    display: flex;
+    flex-direction: column;    
+}
+.dog {
+    width: 300px;
+    height: auto;
+}
