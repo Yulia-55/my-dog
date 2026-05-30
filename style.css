@@ -57,6 +57,7 @@ footer {
     text-align: center;
     padding: 30px 50px;    
     justify-content: space-between;
+    max-width: 1200px;
 }
 .contakt {
     display: flex;
@@ -68,12 +69,14 @@ footer {
     font-size: 16px;
 }
 .content {
+    height: 615px;
     display: flex;
     flex-direction: column;    
 }
 .dog {
     width: 300px;
     height: auto;
+    margin: 0 10px;
 }
 .letter {
     display: block;
@@ -82,7 +85,7 @@ footer {
 }
 .info {
     display: block;
-    padding: 0 28px 30px;
+    padding: 0 15px 30px 45px;
     max-width: 355px;
 }
 .info h2 {
@@ -101,7 +104,10 @@ footer {
 }
 .foto {
     border-radius: 50%;
-    height: 40px;
-    padding: 10px;
-    display: block;
+    justify-content: center;
+    border: solid 2px #F1CDB3;
+    width: 35px;
+    height: 35px;    
+    display: flex;
+    align-self: center;
 }
