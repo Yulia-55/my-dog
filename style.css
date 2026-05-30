@@ -10,7 +10,7 @@ body {
 }
 h1 {
     font-family: "Great Vibes", cursive;
-    font-size: 40px;
+    font-size: 50px;
     color: white;
 }
 .logo {
@@ -74,4 +74,34 @@ footer {
 .dog {
     width: 300px;
     height: auto;
+}
+.letter {
+    display: block;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.info {
+    display: block;
+    padding: 0 28px 30px;
+    max-width: 355px;
+}
+.info h2 {
+    font-size: 22px;
+    color: #444444;
+    margin-bottom: 10px;
+}
+.puppies {
+    font-family: "Great Vibes", cursive;
+    font-size: 50px;
+    color: rgb(173, 164, 121); 
+}
+.image {
+    display: flex;    
+    align-items: center;
+}
+.foto {
+    border-radius: 50%;
+    height: 40px;
+    padding: 10px;
+    display: block;
 }
