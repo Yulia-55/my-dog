@@ -15,16 +15,13 @@
       <img src="img/kennel.png" width="100" alt="kennel"/>
     </header>
     <main class="container">      
-      <section class="section">        
-          <!-- <img id="pdr-dame" class="vind_foto" src="img/pedigri.png" alt="pdr-nura"/>
-          <img id="pdr-sire" class="vind_foto" src="img/pedigri-sire.png" alt="pdr-sire"/>
-          <img id="test-dame" class="vind_foto" src="img/test-dame.png" alt="test-nura"/>         -->
+      <section class="section"> 
         <div class="content">
           <div class="info">
             <span class="letter">Dame:</span>
             <h2>Nuar-Di Iz Vladeniya Akelo</h2>
-            <button class="button">Pedigree</button>
-            <button class="button">Test</button>
+            <button class="button" data-popup="pdg-dame">Pedigree</button>
+            <button class="button" data-popup="test-dame">Test</button>
           </div>
           <div class="image">
             <button class="foto">
@@ -40,7 +37,7 @@
           <div class="info">
             <span class="letter">Sire:</span>
             <h2>Diamond Brave Heart Apricote Mood</h2>
-            <button class="button">Pedigree</button>
+            <button class="button" data-popup="pdg-sire">Pedigree</button>
           </div>
           <div class="image">
             <button class="foto">
@@ -100,6 +97,30 @@
         <span class="contact-info">Borova, Kyiv reg.,<br/>Ukraine 08520</span>
       </div>
     </footer>      
-  </div>  
+  </div>
+  <div id="pdg-dame" class="pupap">
+    <div class="pupap_bodi">
+      <div class="pupap_content">
+        <a href="#" class="pupap_close">&#10006</a>
+        <img class="pupap_image" src="img/pedigri.png" alt="pdg-nura"/>
+      </div>
+    </div>
+  </div>
+  <div id="test-dame" class="pupap">
+    <div class="pupap_bodi">
+      <div class="pupap_content">
+        <a href="#" class="pupap_close">&#10006</a>
+        <img class="pupap_image" src="img/test-dame.png" alt="test-nura"/>
+      </div>
+    </div>
+  </div>
+  <div id="pdg-sire" class="pupap">
+    <div class="pupap_bodi">
+      <div class="pupap_content">
+        <a href="#" class="pupap_close">&#10006</a>
+        <img class="pupap_image" src="img/pedigri-sire.png" alt="pdg-sire"/>
+      </div>
+    </div>
+  </div> 
 </body>
 </html>
