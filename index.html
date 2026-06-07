@@ -9,19 +9,21 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header id="header" class="header">
+      <!-- <a href="#popup" class="header_popup" ></a> -->
       <span class="logo">Kennel</span>
       <h1>Iz  Vladeniya  Akelo</h1>
       <img src="img/kennel.png" width="100" alt="kennel"/>
     </header>
     <main class="container">      
-      <section class="section"> 
+      <section class="section_content"> 
         <div class="content">
           <div class="info">
             <span class="letter">Dame:</span>
             <h2>Nuar-Di Iz Vladeniya Akelo</h2>
-            <button class="button" data-popup="pdg-dame">Pedigree</button>
-            <button class="button" data-popup="test-dame">Test</button>
+            <a href="#pdg-dame" class="button href_info">Pedigree</a>
+            <!-- <button class="button" data-popup="pdg-dame">Pedigree</button> -->
+            <a href="#test-dame" class="button href_info">Test</a>
           </div>
           <div class="image">
             <button class="foto">
@@ -37,7 +39,7 @@
           <div class="info">
             <span class="letter">Sire:</span>
             <h2>Diamond Brave Heart Apricote Mood</h2>
-            <button class="button" data-popup="pdg-sire">Pedigree</button>
+            <a href="#pdg-sire" class="button href_info">Pedigree</a>
           </div>
           <div class="image">
             <button class="foto">
@@ -49,78 +51,83 @@
             </button>
           </div>
         </div>
-      </section>        
-          <h2 class="puppies">Puppies new litter</h2>
-          <span class="letter">date of birth: 05.05.2026</span>        
-      <section class="section"> 
-        <div class="content">
-          <div class="info">            
-            <h2>Females:</h2>
+      </section>              
+      <section class="section">        
+        <h2 class="puppies">Puppies new litter</h2>
+        <span class="letter">date of birth: 05.05.2026</span>
+        <div class="section_content">
+          <div class="content">
+            <div class="info">
+              <h2>Females:</h2>
+            </div>
+            <div class="image">
+              <button class="foto">
+                <img src="img/arrow-left.svg" width="20" alt="left"/>
+              </button>
+              <img class="dog" src="img/rida1.jpg" alt="Rida"/>
+              <button class="foto">
+                <img src="img/right-arrow.svg" width="20" alt="right"/>
+              </button>
+            </div>
+          </div>
+          <div class="content">
+          <div class="info">
+            <h2>Males:</h2>
           </div>
           <div class="image">
             <button class="foto">
               <img src="img/arrow-left.svg" width="20" alt="left"/>
             </button>
-            <img class="dog" src="img/rida1.jpg" alt="Rida"/>
+            <img class="dog" src="img/mal3.34.jpg" alt="Overt"/>
             <button class="foto">
               <img src="img/right-arrow.svg" width="20" alt="right"/>
             </button>
           </div>
-        </div>
-        <div class="content">      
-        <div class="info">          
-          <h2>Males:</h2>                    
-        </div>
-        <div class="image">
-          <button class="foto">
-            <img src="img/arrow-left.svg" width="20" alt="left"/>
-          </button>
-          <img class="dog" src="img/mal3.34.jpg" alt="Overt"/>
-          <button class="foto">
-            <img src="img/right-arrow.svg" width="20" alt="right"/>
-          </button>
-        </div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="contakt">
+      <div class="contact">
         <img src="img/icon-phone.svg" width="35" alt="phone"/>
         <span class="contact-info">+38 063 602 2482</span>
       </div>
-      <div class="contakt">
+      <div class="contact">
         <img src="img/icon-email.svg" width="35" alt="email"/>
         <span class="contact-info">iii888jji@gmail.com</span>
       </div>
-      <div class="contakt">
+      <div class="contact">
         <img src="img/icon-marker.png" width="20" alt="phone"/>
         <span class="contact-info">Borova, Kyiv reg.,<br/>Ukraine 08520</span>
       </div>
     </footer>      
   </div>
-  <div id="pdg-dame" class="pupap">
-    <div class="pupap_bodi">
-      <div class="pupap_content">
-        <a href="#" class="pupap_close">&#10006</a>
-        <img class="pupap_image" src="img/pedigri.png" alt="pdg-nura"/>
+  <!-- <div id="pdg-dame" class="popup">
+    <a href="#header" class="popup_area"></a>
+    <div class="popup_bodi">
+      <div class="popup_content">
+        <a href="" class="popup_close">&#10006</a>
+        <img class="popup_image" src="img/pedigri.png" alt="pdg-nura"/>
+      </div>
+    </div>
+  </div> -->
+  <div id="test-dame" class="popup">
+    <a href="#header" class="popup_area"></a>
+    <div class="popup_bodi">
+      <div class="popup_content">
+        <a href="" class="popup_close">&#10006</a>
+        <img class="popup_image" src="img/test-dis-nur.jpg" alt="test-nura"/>
       </div>
     </div>
   </div>
-  <div id="test-dame" class="pupap">
-    <div class="pupap_bodi">
-      <div class="pupap_content">
-        <a href="#" class="pupap_close">&#10006</a>
-        <img class="pupap_image" src="img/test-dame.png" alt="test-nura"/>
+  <!-- <div id="pdg-sire" class="popup">
+    <a href="#header" class="popup_area"></a>
+    <div class="popup_bodi">
+      <div class="popup_content">
+        <a href="" class="popup_close">&#10006</a>
+        <img class="popup_image" src="img/pedigri_sir.jpg" alt="pdg-sire"/>
       </div>
     </div>
-  </div>
-  <div id="pdg-sire" class="pupap">
-    <div class="pupap_bodi">
-      <div class="pupap_content">
-        <a href="#" class="pupap_close">&#10006</a>
-        <img class="pupap_image" src="img/pedigri-sire.png" alt="pdg-sire"/>
-      </div>
-    </div>
-  </div> 
+  </div>  -->
 </body>
 </html>
