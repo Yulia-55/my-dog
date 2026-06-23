@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My dog</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="wrapper">
-    <header id="header" class="header">
-      <!-- <a href="#popup" class="header_popup" ></a> -->
+    <header id="header" class="header">      
       <span class="logo">Kennel</span>
       <h1>Iz  Vladeniya  Akelo</h1>
-      <img src="img/kennel.png" width="100" alt="kennel"/>
+      <a href="#doc-logo" class="href_logo"><img class="logo_img" src="img/kennel.png" alt="kennel"/></a>
     </header>
     <main class="container">      
       <section class="section_content"> 
@@ -21,113 +21,166 @@
           <div class="info">
             <span class="letter">Dame:</span>
             <h2>Nuar-Di Iz Vladeniya Akelo</h2>
-            <a href="#pdg-dame" class="button href_info">Pedigree</a>
-            <!-- <button class="button" data-popup="pdg-dame">Pedigree</button> -->
-            <a href="#test-dame" class="button href_info">Test</a>
-          </div>
-          <div class="image">
-            <button class="foto">
+            <a href="#pdg-dame" class="button href_info popup-link">Pedigree</a>            
+            <a href="#test-dame" class="button href_info popup-link">Test</a>
+          </div>                
+          <div class="adult-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">                
+                <img class="dog" src="img/2.jpg" alt="Nura"/>                
+              </div>
+              <div class="swiper-slide">                
+                <img class="dog" src="img/1.jpg" alt="Nura"/>                
+              </div>
+              <div class="swiper-slide">                
+                <img class="dog" src="img/3.jpg" alt="Nura"/>                
+              </div>
+              <div class="swiper-slide">                
+                <img class="dog" src="img/nur4.jpg" alt="Nura"/>                
+              </div>
+            </div>
+            <button class="foto foto-left swiper-button-prev">
               <img src="img/arrow-left.svg" width="20" alt="left"/>
             </button>
-            <img class="dog" src="img/2.jpg" alt="Nura"/>
-            <button class="foto">
+            <button class="foto foto-right swiper-button-next">
               <img src="img/right-arrow.svg" width="20" alt="right"/>
             </button>
-          </div>
+            <div class="bullet swiper-pagination"></div>            
+          </div>                    
         </div>
         <div class="content">
-          <div class="info">
+          <div class="info info-sir">
             <span class="letter">Sire:</span>
             <h2>Diamond Brave Heart Apricote Mood</h2>
-            <a href="#pdg-sire" class="button href_info">Pedigree</a>
-          </div>
-          <div class="image">
-            <button class="foto">
+            <a href="#pdg-sire" class="button href_info popup-link">Pedigree</a>
+          </div>          
+          <div class="adult-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">                
+                <img class="dog" src="img/sir3.jpg" alt="Sire"/>                
+              </div>
+              <div class="swiper-slide">                
+                <img class="dog" src="img/sir2.jpg" alt="Sire"/>                
+              </div>
+              <div class="swiper-slide">                
+                <img class="dog" src="img/sir1.jpg" alt="Sire"/>                
+              </div>
+              <div class="swiper-slide">                
+                <img class="dog" src="img/sir3.jpg" alt="Sire"/>                
+              </div>
+            </div>
+            <button class="foto foto-left swiper-button-prev">
               <img src="img/arrow-left.svg" width="20" alt="left"/>
             </button>
-            <img class="dog" src="img/sir3.jpg" alt="Sire"/>
-            <button class="foto">
+            <button class="foto foto-right swiper-button-next">
               <img src="img/right-arrow.svg" width="20" alt="right"/>
             </button>
-          </div>
+            <div class="bullet swiper-pagination"></div>            
+          </div>           
         </div>
       </section>              
       <section class="section">        
         <h2 class="puppies">Puppies new litter</h2>
-        <span class="letter">date of birth: 05.05.2026</span>
-        <div class="section_content">
-          <div class="content">
-            <div class="info">
-              <h2>Females:</h2>
+        <span class="letter letter-puppies">date of birth: 05.05.2026</span>
+        <span class="letter">2 females and 3 males</span>
+        <div class="section_content content-puppies content">          
+          <div class="puppies-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="dog dog-puppies" src="img/rida1.jpg" alt="Rida"/>
+              </div>
+              <div class="swiper-slide">
+                <img class="dog dog-puppies" src="img/liya5.jpg" alt="Rida"/>
+              </div>
+              <div class="swiper-slide">
+                <img class="dog dog-puppies" src="img/rida1.jpg" alt="Rida"/>
+              </div>
+              <div class="swiper-slide">
+                <img class="dog dog-puppies" src="img/rida1.jpg" alt="Rida"/>
+              </div>
+              <div class="swiper-slide">
+                <img class="dog dog-puppies" src="img/rida1.jpg" alt="Rida"/>
+              </div>
+              <div class="swiper-slide">
+                <img class="dog dog-puppies" src="img/rida1.jpg" alt="Rida"/>
+              </div>
+              <div class="swiper-slide">
+                <img class="dog dog-puppies" src="img/rida1.jpg" alt="Rida"/>
+              </div>
+              <div class="swiper-slide">
+                <img class="dog dog-puppies" src="img/rida1.jpg" alt="Rida"/>
+              </div>
+              <div class="swiper-slide">
+                <img class="dog dog-puppies" src="img/rida1.jpg" alt="Rida"/>
+              </div>              
             </div>
-            <div class="image">
-              <button class="foto">
-                <img src="img/arrow-left.svg" width="20" alt="left"/>
-              </button>
-              <img class="dog" src="img/rida1.jpg" alt="Rida"/>
-              <button class="foto">
-                <img src="img/right-arrow.svg" width="20" alt="right"/>
-              </button>
-            </div>
-          </div>
-          <div class="content">
-          <div class="info">
-            <h2>Males:</h2>
-          </div>
-          <div class="image">
-            <button class="foto">
+            <button class="foto foto-left swiper-button-prev">
               <img src="img/arrow-left.svg" width="20" alt="left"/>
             </button>
-            <img class="dog" src="img/mal3.34.jpg" alt="Overt"/>
-            <button class="foto">
+            <button class="foto foto-right swiper-button-next">
               <img src="img/right-arrow.svg" width="20" alt="right"/>
             </button>
-          </div>
+            <div class="bullet-puppies swiper-pagination"></div>  
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="contact">
-        <img src="img/icon-phone.svg" width="35" alt="phone"/>
-        <span class="contact-info">+38 063 602 2482</span>
+        <img class="contact-icon" src="img/icon-phone.svg" width="35" alt="phone"/>
+        <a class="contact-info" href="tel:+380636022482">
+          +38 063 602 2482
+        </a>
       </div>
       <div class="contact">
-        <img src="img/icon-email.svg" width="35" alt="email"/>
-        <span class="contact-info">iii888jji@gmail.com</span>
+        <img class="contact-icon" src="img/icon-email.svg" width="35" alt="email"/>
+        <a class="contact-info" href="mailto:iii888jji@gmail.com">
+          iii888jji@gmail.com
+        </a>        
       </div>
       <div class="contact">
-        <img src="img/icon-marker.png" width="20" alt="phone"/>
+        <img class="contact-icon" src="img/icon-marker.png" width="20" alt="phone"/>
         <span class="contact-info">Borova, Kyiv reg.,<br/>Ukraine 08520</span>
       </div>
     </footer>      
   </div>
-  <!-- <div id="pdg-dame" class="popup">
+  <div id="pdg-dame" class="popup">
     <a href="#header" class="popup_area"></a>
     <div class="popup_bodi">
       <div class="popup_content">
-        <a href="" class="popup_close">&#10006</a>
+        <a href="#header" class="popup_close">&#10006;</a>
         <img class="popup_image" src="img/pedigri.png" alt="pdg-nura"/>
       </div>
     </div>
-  </div> -->
+  </div>
   <div id="test-dame" class="popup">
     <a href="#header" class="popup_area"></a>
     <div class="popup_bodi">
       <div class="popup_content">
-        <a href="" class="popup_close">&#10006</a>
+        <a href="#header" class="popup_close">&#10006;</a>
         <img class="popup_image" src="img/test-dis-nur.jpg" alt="test-nura"/>
       </div>
     </div>
   </div>
-  <!-- <div id="pdg-sire" class="popup">
+  <div id="pdg-sire" class="popup">
     <a href="#header" class="popup_area"></a>
     <div class="popup_bodi">
       <div class="popup_content">
-        <a href="" class="popup_close">&#10006</a>
+        <a href="#header" class="popup_close">&#10006;</a>
         <img class="popup_image" src="img/pedigri_sir.jpg" alt="pdg-sire"/>
       </div>
     </div>
-  </div>  -->
+  </div>
+  <div id="doc-logo" class="popup">
+    <a href="#header" class="popup_area"></a>
+    <div class="popup_bodi">
+      <div class="popup_content popup_logo">
+        <a href="#header" class="popup_close">&#10006;</a>
+        <img class="popup_image" src="img/kennel.png" alt="pdg-sire"/>
+      </div>
+    </div>
+  </div> 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 </html>

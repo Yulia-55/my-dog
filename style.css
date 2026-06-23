@@ -14,22 +14,32 @@ h1 {
     font-size: 50px;
     color: white;
 }
+.logo_img {
+    width: 100px;
+    height: auto;
+}
 .logo {
     letter-spacing: 1px;
     font-family: "Great Vibes", cursive;
     font-size: 30px;
     color: rgb(173, 164, 121);
 }
+.href_logo {
+    border: 2px solid transparent;
+}
+.href_logo:hover {
+    border: solid 2px rgb(238, 137, 5);
+}
 .wrapper {
-  min-height: 100%;
+  min-height: 100%;  
 }
 .header {
+  z-index: 1;   
   background-color: #444444;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1200px;
+  width: 100%;  
   position: fixed;
   height: auto;
   padding: 30px 40px;
@@ -38,7 +48,6 @@ h1 {
 .container {
     padding: 150px 20px 0;
     display: flex;    
-    max-width: 1200px;
     align-items: center;    
     flex-direction: column;
     background-color: rgb(233, 232, 222);
@@ -65,8 +74,7 @@ footer {
     background-color: #444444;    
     text-align: center;
     padding: 30px 50px;    
-    justify-content: space-between;
-    max-width: 1200px;
+    justify-content: space-between;    
 }
 .contact {
     display: flex;
@@ -80,22 +88,75 @@ footer {
 .content {
     height: 715px;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    min-width: 0;    
 }
-.dog {
+.content-puppies {
+    height: auto;
+    flex-direction: unset;    
+    padding: 40px 20px 0;    
+}
+.adult-slider {
+    z-index: 0;
+    position: relative;
+    width: 440px;
+    overflow: hidden;   
+}
+.puppies-slider {
+    z-index: 0;
+    position: relative;    
+    overflow: hidden;    
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-pagination {
+    text-align: center;
+    width: 100% !important;
+    bottom: -25px !important;    
+}
+.swiper-pagination-bullet {    
+    width: 14px;
+    height: 14px;
+    background-color: #7a7878;
+    opacity: 1;
+    margin: 0 8px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #F1CDB3;
+}
+.dog {    
     width: 350px;
     height: auto;
     margin: 0 10px;
+}
+.dog-puppies {
+    width: 100%;
+    height: auto;
+    margin: 0;
 }
 .letter {
     display: block;
     font-size: 18px;
     padding: 10px 0;
 }
+.letter-puppies {
+    padding: 5px 0 0;
+}
 .info {
     display: block;
-    padding: 0 15px 25px 45px;
-    max-width: 355px;
+    padding: 0 0 25px 45px;
+    max-width: 395px;
     margin-bottom: 10px;
 }
 .info h2 {
@@ -108,9 +169,20 @@ footer {
     font-size: 50px;
     color: rgb(173, 164, 121); 
 }
+.bullet-puppies {
+    padding-top: 10px;
+    position: static;
+}
+.bullet-puppies 
+.swiper-pagination-bullet-active {
+    font-size: 22px;
+    height: 22px;
+    width: 22px;
+}    
 .image {
     display: flex;    
     align-items: center;
+    justify-content: center;
 }
 .foto {
     border-radius: 50%;
@@ -140,38 +212,18 @@ footer {
     color: rgb(173, 164, 121);    
     text-decoration: underline solid 2px rgb(173, 164, 121);
 }
-@media (max-width: 1200px) {
-    .footer {
-        max-width: 970px;
-    }
-    .header {
-        max-width: 970px;    
-    }
-    .container {
-        max-width: 970px;
-    }
-    .section_content {
-        padding: 20px 0;
-    }
+.contact-info {
+    color: inherit;
+    text-decoration: none;
 }
-@media (max-width: 992px) {    
-    .section_content {
-        flex-direction: column;        
-        align-items: center;
-    }    
+
+a.contact-info:hover {
+    text-decoration: underline;
+    color: rgb(173, 164, 121);
 }
-@media (max-width: 645px) {
-    .header {
-        padding: 25px 20px;
-    }
-    .footer {
-        padding: 25px 20px;
-    }
-    .contact_info {
-        padding-left: 5px;
-    }
-}
+
 .popup {
+    z-index: 2;    
     position: fixed;
     top: 0;
     left: 0;
@@ -182,6 +234,7 @@ footer {
     visibility: hidden;
     justify-content: center;
     align-items: center;
+    transition: all 0.8s ease 0s;
 }
 .popup_bodi {
     display: flex;
@@ -198,6 +251,9 @@ footer {
     opacity: 0;
     transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
+.popup_logo {
+    transform: perspective(600px) translate(100%, -100%) scale(0.5);
+}
 .popup_close {
     position: absolute;
     top: 10px;
@@ -206,19 +262,157 @@ footer {
     cursor: pointer;
     color:black;
     text-decoration: none;
+    transition: all 0.8s ease 0s;
 }
 .popup_image {
     width: 100%;
     height: auto;
 }
-.popup.active {
+.popup_area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.popup:target {
     opacity: 1;
     visibility: visible;
 }
-.popup_area {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.popup:target .popup_content {
+    opacity: 1;
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);    
 }
+.popup:target .popup_logo {
+    transform: perspective(600px) translate(0%, 0%) scale(1);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: "" !important;
+}
+@media (max-width: 1200px) {
+    .content-puppies {
+        padding: 40px 20px 0;
+    }
+    .section_content {
+        padding: 20px 0;
+    }
+}
+@media (max-width: 992px) {
+    .info-sir {
+        padding-top: 50px;
+    }
+    .content {
+        height: auto;
+    }    
+    .section_content {        
+        flex-direction: column;        
+        align-items: center;        
+    }
+    .content-puppies {
+        flex-direction: row;
+    }    
+}
+@media (max-width: 768px) {   
+    .container {
+        padding: 95px 20px 0;
+    }
+    .logo_img {
+        width: 70px;
+    }
+    .puppies {
+        font-size: 40px;
+    }
+    .logo {
+        font-size: 25px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .header,
+    .footer {
+        padding: 25px 20px;
+    }
+    .contact_info {
+        padding-left: 5px;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        padding: 80px 20px 0;
+    }
+    .logo_img {
+        width: 60px;
+    }
+    .puppies {
+        font-size: 30px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .info h2 {
+        font-size: 18px;
+    }
+    .letter {
+        font-size: 16px;
+    }
+    .contact-info {
+        padding: 0;
+        font-size: 14px;
+    }
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-icon {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 500px) {
+    .dog-puppies {
+        padding: 0;
+    }
+    .puppies-slider {
+        padding: 0;
+    }
+    .adult-slider {
+        width: 100%;
+    }
+    .dog {
+        margin: 0;
+    }
+    .header,
+    .footer {
+        padding: 20px 10px;
+    }
+    
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .section_content {
+        padding: 0;
+    }
+    .content {
+        width: 100%;
+    }
+    .foto-left,
+    .foto-right {
+        display: none;
+    }
+    .logo_img {
+        width: 50px;
+    }    
+    .logo {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 24px;
+    }    
+}
+
