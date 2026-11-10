@@ -48,4 +48,16 @@ new Swiper('.puppies-slider', {
         }
     }
 });
-// window.location.href = "mailto:iii888jji@gmail.com";
+
+// Открыть почту
+function openEmail() {
+    const answer = confirm('Open email?');
+
+    if (answer) {
+        window.open(
+            'https://mail.google.com/mail/?view=cm&fs=1&to=iii888jji@gmail.com',
+            '_blank'
+        );
+    }
+}
+
