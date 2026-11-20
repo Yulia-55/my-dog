@@ -423,6 +423,9 @@ a.contact-info:hover {
     }
 }
 @media (max-width: 500px) {
+    .info {
+        padding: 0 0 25px 0;
+    }
     .dog-puppies {
         padding: 0;
     }
